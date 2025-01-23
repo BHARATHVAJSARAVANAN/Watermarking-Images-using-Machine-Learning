@@ -1,0 +1,96 @@
+Home Page
+The Home Page introduces the purpose of the website—Watermarking Using Machine Learning. It showcases the following sections:
+
+About: Explains how the platform uses cutting-edge algorithms to protect digital assets.
+Contact Us: Provides a form for users to reach out for queries or support.
+How It Works: Describes the step-by-step watermarking process using DWT and SVD techniques.
+Key Features: Highlights features such as high security, robust watermark extraction, and compatibility with various image formats.
+What Our Customers Say: Displays testimonials from satisfied users.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask (Python)
+-----------------------------------------------------------------------------------------------------------------------------------
+Login Page
+The Login Page allows users to access their personalized accounts.
+
+Login: Users enter their credentials to log in securely.
+Register: New users can create an account to start using the watermarking features.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask (Python) for secure authentication
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+Watermarking Page
+The Watermarking Page is where users can upload images and apply watermarking algorithms.
+
+Upload Host Image: Upload the base image where the watermark will be applied.
+Upload Watermark Image: Upload the image to use as a watermark.
+Run DWT Watermarking: Apply Discrete Wavelet Transform (DWT) for embedding the watermark.
+Run SVD Watermarking: Apply Singular Value Decomposition (SVD) for enhanced security.
+Run Extraction: Extract the watermark from the host image.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+Machine Learning Concepts:
+DWT (Discrete Wavelet Transform): Efficient for image decomposition and embedding watermarks.
+SVD (Singular Value Decomposition): Ensures robust watermarking by modifying singular values.
+PSNR (Peak Signal-to-Noise Ratio): Evaluates image quality after watermarking.
+MSE (Mean Squared Error): Measures error between original and watermarked images.
+SSIM (Structural Similarity Index): Quantifies image quality and similarity.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Result Page
+Displays the results of the watermarking or extraction process. Users can view:
+
+The watermarked image
+PSNR, MSE, and SSIM scores
+The extracted watermark image
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Profile Page
+The Profile Page allows users to manage their account details, such as name, email, and password.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Compatibility Page
+The Compatibility Page lists the supported file formats and devices for watermarking.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Terms of Service Page
+Outlines the terms and conditions for using the website, including usage policies and user responsibilities.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Privacy Policy Page
+Explains how user data is collected, stored, and protected to ensure privacy and compliance.
+
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript
+Backend: Flask

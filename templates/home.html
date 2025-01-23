@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+	<title>Watermark Photos</title>
+	<meta name="description" content="Protect your photos with custom watermarks. Save watermarks as templates for later use. Watermark animated GIFs, preserving all layers of animation. Batch process and watermark many files at once.">
+	<meta name="keywords" content="watermark, batch watermark, watermark photos, watermark videos, watermark images, online watermark, watermark tool, online watermark tool, watermark online, protect photos, copyright my photos">
+
+	<!-- <meta name="csrf-token" content="mldQQdZebIQjgQHMN8nf0r9xMZiffSZfIOUmHdAI"> -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Watermarkimages">
+	<!-- <meta name="facebook-domain-verification" content="2jpmuflglu1g811qw1703w6z7w9j9e"> -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="static\image\apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static\image\favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static\image\favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4a90e2">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" href="static\fonts\fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="static\fonts\fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="static\fonts\fontastic.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="static\fonts\proximanova-regular-webfont.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="static\fonts\proximanova-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="https://kit.fontawesome.com/4f33428692.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.y/css/all.min.css">
+
+	<link href="static\wa.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='wa.css') }}">
+
+			<script>
+		!function () {
+			var analytics = window.analytics = window.analytics || [];
+			if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+				analytics.invoked = !0;
+				analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"];
+				analytics.factory = function (e) {
+					return function () {
+						var t = Array.prototype.slice.call(arguments);
+						t.unshift(e);
+						analytics.push(t);
+						return analytics
+					}
+				};
+				for (var e = 0; e < analytics.methods.length; e ++) {
+					var key = analytics.methods[e];
+					analytics[key] = analytics.factory(key)
+				}
+				analytics.load = function (key, e) {
+					var t = document.createElement("script");
+					t.type = "text/javascript";
+					t.async = !0;
+					t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+					var n = document.getElementsByTagName("script")[0];
+					n.parentNode.insertBefore(t, n);
+					analytics._loadOptions = e
+				};
+				analytics._writeKey = "uORpvPK0N4";
+				analytics.SNIPPET_VERSION = "4.15.2";
+				analytics.load("uORpvPK0N4", {
+					integrations: {
+						'Intercom': false,
+						'Inspectlet': false,
+					}
+				});
+				analytics.page('Index', {
+					referrer: ''
+				});
+			}
+		}();
+	</script>
+	
+</head>
+
+	<body class="bg-white font-sans h-full">
+
+		<!-- Container -->
+		<div class="text-gray-900">
+
+			<!-- Top -->
+			<div id="top" class="container max-w-screen-lg p-4 sm:p-8">
+				<div class="flex flex-wrap items-center">
+					<!-- Logo -->
+					<div class="flex-grow">
+						<a href="/" title="Watermark - Watermark Photos Online">
+							<div class="hidden sm:inline-block">
+								<svg class="" width="217" height="27" xmlns="http://www.w3.org/2000/svg"><g fill="#4A90E2" fill-rule="nonzero"><path d="M16.344 24.133L2.334 15.02 0 16.4l16.344 10.633L32.687 16.4l-2.334-1.381z"/><path d="M0 10.6l16.344 10.495 16.343-10.633L16.344-.033 0 10.6zm16.344 5.524c-2.198 0-3.846-1.795-3.846-3.867 0-2.21 3.846-7.595 3.846-7.595s3.845 5.524 3.845 7.595a3.85 3.85 0 01-3.845 3.867z"/><g><path d="M58.645 22.614l-3.846-14.5-3.845 14.5h-3.708l-5.494-19.61h3.845l3.846 15.191 3.983-15.052h2.747l3.983 15.052L64 3.143h3.846l-5.631 19.61h-3.571zM82.405 22.614l-1.373-3.728h-8.928l-1.373 3.728h-3.846l7.692-19.61h4.257l7.691 19.61h-4.12zM76.5 6.457l-3.57 9.39h7.004l-3.434-9.39zM91.195 22.614V6.043h-5.906V3.005h15.245v3.038h-5.906v16.571zM103.281 22.614V3.004h13.46v3.039h-9.89v5.11h9.752v3.037h-9.751v5.524h9.889v3.038h-13.46zM131.299 22.614l-4.258-7.319h-3.433v7.32h-3.434V3.004h8.515c3.846 0 6.455 2.485 6.455 6.076 0 3.452-2.335 5.386-4.67 5.8l4.808 7.733h-3.983zm.274-13.395c0-1.933-1.373-3.038-3.296-3.038h-4.67v6.214h4.67c1.923-.138 3.296-1.243 3.296-3.176zM155.334 22.614V7.562l-5.906 15.052h-1.51l-6.044-15.052v15.052h-3.433V3.004h4.806l5.357 13.396 5.219-13.395h4.807v19.61zM176.622 22.614l-1.374-3.728h-9.064l-1.374 3.728h-3.845l7.69-19.61h4.258l7.691 19.61h-3.982zm-5.906-16.157l-3.571 9.39h7.004l-3.433-9.39zM193.652 22.614l-4.258-7.319h-3.433v7.32h-3.434V3.004h8.515c3.846 0 6.455 2.485 6.455 6.076 0 3.452-2.334 5.386-4.67 5.8l4.808 7.733h-3.983zm.412-13.395c0-1.933-1.373-3.038-3.296-3.038h-4.67v6.214h4.67c1.923-.138 3.296-1.243 3.296-3.176zM212.605 22.614l-6.455-8.285-1.785 2.071v6.214h-3.434V3.004h3.434v9.253l7.553-9.252h4.258l-7.966 9.252 8.515 10.357z"/></g></g></svg>							</div>
+							<div class="sm:hidden">
+								<svg class="" width="33" height="27" xmlns="http://www.w3.org/2000/svg"><g fill="#4A90E2" fill-rule="nonzero"><path d="M16.344 24.133L2.334 15.02 0 16.4l16.344 10.633L32.687 16.4l-2.334-1.381z"/><path d="M0 10.6l16.344 10.495 16.343-10.633L16.344-.033 0 10.6zm16.344 5.524c-2.198 0-3.846-1.795-3.846-3.867 0-2.21 3.846-7.595 3.846-7.595s3.845 5.524 3.845 7.595a3.85 3.85 0 01-3.845 3.867z"/><g><path class="hidden sm:inline" d="M58.645 22.614l-3.846-14.5-3.845 14.5h-3.708l-5.494-19.61h3.845l3.846 15.191 3.983-15.052h2.747l3.983 15.052L64 3.143h3.846l-5.631 19.61h-3.571zM82.405 22.614l-1.373-3.728h-8.928l-1.373 3.728h-3.846l7.692-19.61h4.257l7.691 19.61h-4.12zM76.5 6.457l-3.57 9.39h7.004l-3.434-9.39zM91.195 22.614V6.043h-5.906V3.005h15.245v3.038h-5.906v16.571zM103.281 22.614V3.004h13.46v3.039h-9.89v5.11h9.752v3.037h-9.751v5.524h9.889v3.038h-13.46zM131.299 22.614l-4.258-7.319h-3.433v7.32h-3.434V3.004h8.515c3.846 0 6.455 2.485 6.455 6.076 0 3.452-2.335 5.386-4.67 5.8l4.808 7.733h-3.983zm.274-13.395c0-1.933-1.373-3.038-3.296-3.038h-4.67v6.214h4.67c1.923-.138 3.296-1.243 3.296-3.176zM155.334 22.614V7.562l-5.906 15.052h-1.51l-6.044-15.052v15.052h-3.433V3.004h4.806l5.357 13.396 5.219-13.395h4.807v19.61zM176.622 22.614l-1.374-3.728h-9.064l-1.374 3.728h-3.845l7.69-19.61h4.258l7.691 19.61h-3.982zm-5.906-16.157l-3.571 9.39h7.004l-3.433-9.39zM193.652 22.614l-4.258-7.319h-3.433v7.32h-3.434V3.004h8.515c3.846 0 6.455 2.485 6.455 6.076 0 3.452-2.334 5.386-4.67 5.8l4.808 7.733h-3.983zm.412-13.395c0-1.933-1.373-3.038-3.296-3.038h-4.67v6.214h4.67c1.923-.138 3.296-1.243 3.296-3.176zM212.605 22.614l-6.455-8.285-1.785 2.071v6.214h-3.434V3.004h3.434v9.253l7.553-9.252h4.258l-7.966 9.252 8.515 10.357z"/></g></g></svg>							</div>
+						</a>
+					</div>
+					<!-- Menu: Toggle -->
+					<button onclick="javascript: toggle('menu-list');" class="flex items-center sm:hidden">
+						<svg viewBox="0 0 100 80" width="30" height="24">
+							<rect width="100" height="8"></rect>
+							<rect y="30" width="100" height="8"></rect>
+							<rect y="60" width="100" height="8"></rect>
+						</svg>
+					</button>
+					<!-- Menu: List -->
+					<div class="hidden sm:flex w-full sm:w-auto mt-4 sm:mt-0" id="menu-list">
+						<ul class="text-right p-2 sm:p-0 rounded sm:flex sm:items-center bg-gray-200 shadow sm:shadow-none sm:bg-transparent w-full text-gray-600 font-bold">
+							<li class="px-2 py-1 sm:p-0 sm:mr-4 md:mr-8">
+								<a href="{{ url_for('home') }}" class="hover:text-black">Home</a>
+							</li>
+							<li class="px-2 py-1 sm:p-0 sm:mr-4 md:mr-8">
+								<a href="{{ url_for('home') }}#about" class="hover:text-black">About</a>
+							</li>
+							<li class="px-2 py-1 sm:p-0 sm:mr-4 md:mr-8">
+								<a href="{{ url_for('home') }}#contact" class="hover:text-black">Contact</a>
+							</li>
+							
+							
+							{% if session.get('email') %}
+                    <!-- Profile link when user is logged in -->
+                    <li class="px-2 py-1 sm:p-0 sm:mr-4 md:mr-8">
+                        <a href="{{ url_for('profile') }}" class="hover:text-black">Profile</a>
+                    </li>
+                    <li class="px-2 py-1 sm:p-0">
+                        <a href="{{ url_for('logout') }}" class="hover:text-black">
+                            Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <!-- Login link when user is not logged in -->
+                    <li class="px-2 py-1 sm:p-0 sm:mr-4 md:mr-8">
+                        <a href="{{ url_for('login') }}" class="hover:text-black">Login</a>
+                    </li>
+                    <li class="px-2 py-1 sm:p-0">
+                        <a href="{{ url_for('login') }}" class="sm:button-primary sm:p-4">
+                            Get Started   <span><i class="fa-solid fa-arrow-right-long "></i></span>
+                        </a>
+                    </li>
+					
+                {% endif %}
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Page Content -->
+			<div>
+				
+	<!-- Jumbotron -->
+	<div class="">
+
+		<div class="bg-image-landscape bg-cover bg-bottom">
+
+			<!-- Heading -->
+			<div class="pt-16 text-center">
+				<h1 class="px-4 text-5xl sm:text-4xl sm:text-5xl leading-none text-gray-700">
+					Watermark <span class="whitespace-nowrap">Your Files</span>
+				</h1>
+				<h2 class="hidden sm:inline-block text-xl leading-normal text-gray-600 mt-2">
+					<b>Create custom watermarks</b> on the web.
+				</h2>
+				{% if session.get('email') %}
+				<!-- Call to Action(s) -->
+				
+				<div class="text-center text-lg items-center justify-center flex-wrap">
+					<div class="p-8 inline-block">
+						<a href="water" class="button-primary px-6 py-4 text-xl sm:w-auto mx-4 sm:mx-0">
+															<span class="">Enter<i class="p-1 fa-solid fa-arrow-right-long"></i></span>
+													</a>
+					</div>
+				</div>
+				
+				{% else %}
+				<div class="text-center text-lg items-center justify-center flex-wrap">
+					<div class="p-8 inline-block">
+						<a href="login.html" class="button-primary px-6 py-4 text-xl sm:w-auto mx-4 sm:mx-0">
+															<span class="">Get Started <i class="fa-solid fa-arrow-right-long"></i></span>
+													</a>
+					</div>
+				</div>
+				
+				{% endif %}
+				
+				<div class="text-sm font-bold uppercase leading-loose text-gray-500">
+					Apply watermarks to: &nbsp;
+					<div class="block sm:inline-block text-sm font-bold mt-1 sm:mt-0 text-gray-600 px-4 select-none">
+						<div title="Image support: JPEG, PNG, BMP, TIF, SVG, WEBP, HEIC"
+							 class="inline-block mr-1 border border-gray-400 rounded-full px-3 py-1 cursor-crosshair hover:border-dashed mb-2">
+							
+							<i class="fa-solid fa-image mr-1"></i>images
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+	<div class="bg-black bg-cover-waves bg-repeat-x bg-top">
+
+		<div class="hidden sm:block container max-w-screen-lg px-8 py-4 bg-cover bg-bottom">
+			<div class="bg-white rounded shadow">
+				<div class="h-8 bg-gray-200 border-b border-gray-300 rounded-t">
+					<div class="flex p-3">
+						<div class="bg-red rounded-full h-2 w-2 p-1 mr-2"></div>
+						<div class="bg-yellow-dark rounded-full h-2 w-2 p-1 mr-2"></div>
+						<div class="bg-green rounded-full h-2 w-2 p-1"></div>
+					</div>
+				</div>
+				<div class="relative overflow-hidden" id="cover">
+					
+						 <img src="static\image\water2.png"
+						 data-src="static\image\water2.png" width="1200" height="620"
+						 alt="Apply custom watermarks. Batch edit your files." class="rounded-b w-full">
+					
+					<span id="bubble_1"
+						  class="transition transform hidden absolute bubble text-white text-xs uppercase p-4 mt-4"
+						  style="bottom:0px; left:40%; width:500px;">click on "Run Extraction" button to upload Watermarked image and then extract embedded image from it.</span>
+					<span id="bubble_2"
+						  class="transition transform hidden absolute bubble bubble-left text-white text-xs uppercase p-4 mt-4"
+						  style="top:50%; left:20%; width:250px;">click on "Run DWT Watermarking" button to embed watermarking using DWT.</span>
+					<span id="bubble_3"
+						  class="transition transform hidden absolute bubble text-white text-xs uppercase p-4 mt-4"
+						  
+						  style="top:50%; right:10%; width:250px;">click on "Run SVD Watermarking" button to embed watermarking using SVD.</span>
+						  
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="hidden sm:block bg-black">
+
+		<!-- Call to Action(s) -->
+		<div class="text-center text-lg items-center justify-center flex-wrap sm:pt-16">
+			<div class="hidden sm:block text-2xl text-gray-300">
+				Ready to protect your digital content?
+			</div>
+			{% if session.get('email') %}
+			<!-- Call to Action(s) -->
+			<div class="text-center text-lg items-center justify-center flex-wrap">
+				<div class="p-8 inline-block">
+					<a href="water" class="button-primary px-6 py-4 text-xl sm:w-auto mx-4 sm:mx-0">
+														<span class="">Enter<i class="p-1 fa-solid fa-arrow-right-long"></i></span>
+												</a>
+				</div>
+			</div>
+			{% else %}
+			<div class="text-center text-lg items-center justify-center flex-wrap">
+				<div class="p-8 inline-block">
+					<a href="login.html" class="button-primary px-6 py-4 text-xl sm:w-auto mx-4 sm:mx-0">
+														<span class="">Get Started <i class="fa-solid fa-arrow-right-long"></i></span>
+												</a>
+				</div>
+			</div>
+			{% endif %}
+			
+		</div>
+
+	</div>
+
+	<div class="bg-gray-100 sm:bg-black -mb-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#33649E" fill-opacity="1"
+				  d="M0,224L40,224C80,224,160,224,240,197.3C320,171,400,117,480,122.7C560,128,640,192,720,202.7C800,213,880,171,960,149.3C1040,128,1120,128,1200,144C1280,160,1360,192,1400,208L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+		</svg>
+	</div>
+
+	<!-- How it Works -->
+	<div class="bg-primary-darker text-white">
+		<div class="container max-w-screen-lg px-8 py-4">
+			<div class="text-center">
+				<h3 class="text-4xl font-bold"><i class="fa-regular fa-question-circle mr-2"></i>How It Works</h3>
+				<p class="text-xl">No download or installation needed.</p>
+			</div>
+			<div class="flex flex-wrap pt-12">
+				<div class="w-full md:w-1/3 px-4 pb-12 text-center">
+					<svg class="h-48 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path fill="#FED6C6" d="M20.6 19c0 .2 0 .4-.1.6-.1.2-.3.3-.5.3l-17 2c-.4.1-.8-.3-.8-.7L0 4.3c0-.4.3-.8.7-.9l17-2.1c.4 0 .8.3.9.7l2 17z"/><path fill="#35546C" d="M1.545 4.788l15.487-1.866 1.615 13.403L3.159 18.19z"/><path fill="#FEDACB" d="M23 21.2c-.1.4-.4.7-.9.7l-17-2c-.4-.1-.7-.4-.7-.9l2-17c.1-.4.4-.7.8-.7l17 2c.4 0 .7.4.7.8L23 21.2z"/><path fill="#527A9C" d="M7.853 2.922l15.591 1.846-1.587 13.407L6.265 16.33z"/><g><path fill="#FEF1EC" d="M23.1 22.9c0 .4-.4.8-.8.8H5.2c-.4 0-.8-.4-.8-.8V5.8c.1-.5.4-.8.8-.8h17.1c.4 0 .8.4.8.8v17.1z"/><path fill="#5B89AE" d="M6 6.5h15.7V20H6z"/></g><g><path fill="#547EA1" d="M19.3 12.6h-.1c-.6-2.1-2.4-3.6-4.7-3.6-1.6 0-3 .8-3.9 2-.2-.1-.4-.2-.6-.2-.7 0-1.2.5-1.4 1.1h-.2c-1 0-1.9.4-2.5 1.1v4.3c.6.7 1.5 1.1 2.5 1.1h10.8c.9 0 1.8-.5 2.3-1.1v-3.7c-.4-.6-1.3-1-2.2-1z"/><path fill="#FED2C1" d="M5.2 15.2c0 .8.3 1.6.8 2.1V13c-.5.6-.8 1.4-.8 2.2zM21.6 13.7v3.7c.4-.5.6-1.1.6-1.8.1-.8-.2-1.4-.6-1.9z"/><g><path fill="#6DA5D1" d="M8.5 17.5c-1.9 0-3.6-1.6-3.6-3.6 0-1.9 1.6-3.5 3.6-3.5.2-.7.8-1.1 1.6-1.1.2 0 .4 0 .5.1.9-1.2 2.4-1.9 3.9-1.9 2.2 0 4.2 1.5 4.8 3.6 1.8 0 3.1 1.4 3.1 3.2 0 1.8-1.4 3.2-3.2 3.2H8.5z"/><path fill="#FEF1EC" d="M14.5 7.7c2.2 0 4.1 1.5 4.6 3.6h.1c1.6 0 3 1.3 3 3s-1.3 2.9-3 2.9H8.5c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3h.2c.2-.6.7-1.1 1.4-1.1.2 0 .4.1.6.2.8-1.2 2.3-2 3.8-2m0-.5c-1.6 0-3 .7-4 1.9-.1-.1-.3-.1-.4-.1-.8 0-1.4.4-1.7 1.1-2 .1-3.7 1.8-3.7 3.8 0 2.1 1.7 3.8 3.8 3.8h10.8c1.9 0 3.4-1.5 3.4-3.4 0-1.8-1.4-3.3-3.2-3.5-.7-2.1-2.7-3.6-5-3.6z"/></g><g><path fill="#FEE5DA" d="M13.7 9.9c.2 0 .4.1.5.2l3.9 3.9c.2.2.3.6.2.8-.1.3-.4.5-.7.5h-1.5v1.9h-4.7v-1.9H9.8c-.3 0-.6-.2-.7-.5-.1-.2 0-.6.2-.8l3.9-3.9c.1-.1.3-.2.5-.2z"/><path fill="#FFBC9C" d="M15.6 17.2v-2.4h2c.1 0 .2-.1.2-.1 0-.1 0-.2-.1-.2l-3.9-3.9-.1-.1v6.7h1.9z"/><path fill="#FFB38F" d="M9.7 14.4c-.1.1-.1.1-.1.2s.1.1.2.1H12v2.4h1.8v-6.8c-.1 0-.1 0-.1.1l-4 4z"/></g></g></svg><!--					<i class="fa fa-file-import text-6xl"></i>-->
+					<p class="py-4 text-xl font-bold">1. Import Files</p>
+					<p class="">Import photos your local device or any social media platform into
+						our website.</p>
+				</div>
+				<div class="w-full md:w-1/3 px-4 pb-12 text-center">
+					<svg class="h-48 inline" xmlns="http://www.w3.org/2000/svg" viewBox="62 -63 150 150"><path fill="#FFBC9C" d="M205.1 59.1c0 3.5-2.8 6.3-6.3 6.3H77.9c-3.5 0-6.3-2.8-6.3-6.3V-29c0-3.5 2.8-6.3 6.3-6.3h120.9c3.5 0 6.3 2.8 6.3 6.3v88.1z"/><path fill="#FFB08A" d="M73 63.1c1.2 1.4 2.9 2.3 4.9 2.3h120.9c3.5 0 6.3-2.8 6.3-6.3v-80L73 63.1z"/><path fill="#DFE8EE" d="M205.1-29.1c0-3.5-2.8-6.3-6.3-6.3H77.9c-3.5 0-6.3 2.8-6.3 6.3v8.2h133.6l-.1-8.2z"/><circle fill="#FF3A4B" cx="79.5" cy="-28" r="2.6"/><circle fill="#FFBC9C" cx="88.1" cy="-28" r="2.6"/><circle fill="#18BC9C" cx="96.8" cy="-28" r="2.6"/><ellipse fill="#FFA073" cx="138.4" cy="46.8" rx="31.7" ry="6.5"/><path fill="#FEF1EC" d="M138 47.6c-17.3 0-32.1-12.6-35.2-30-.4-2.2-.6-4.4-.6-6.6 0-24.5 14.9-48.6 33.5-65.4 1.3-1.2 3.3-1.1 4.5.1 17.2 16.7 33.5 41.5 33.5 65.3 0 20.2-16 36.6-35.7 36.6z"/><path fill="#6497BF" d="M138-52.2s-1.1.9-2.8 2.6c8.4 14.7 28.9 54.3 14.5 70.6-15 16.9-36.9 1.5-43.7-4 2.8 15.6 16.1 27.4 32 27.4 18 0 32.6-15 32.6-33.4-.1-32.8-32.6-63.2-32.6-63.2z"/><path fill="#5B89AE" d="M149.6 21c19.2-23.1-4-56.7-14.4-70.6-7.9 7.7-29.8 31.5-29.8 60.6 0 2.1.2 4.1.5 6 5.5 10.3 29.3 21.4 43.7 4z"/><g><path fill="none" d="M138-52.2s.7-.8-1.1.9C129-43.6 105.4-18 105.4 11c0 2.1.2 4.1.5 6 2.8 15.6 16.1 27.4 32 27.4 18 0 32.6-15 32.6-33.4 0-32.8-32.5-63.2-32.5-63.2z"/></g><path fill="#FEF1EC" d="M198.4 25.7c-1.8-.3-3.3-1.7-3.5-3.5l-1-6.8-1 6.8c-.3 1.8-1.7 3.3-3.5 3.5l-6.8 1 6.8 1c1.8.3 3.3 1.7 3.5 3.5l1 6.8 1-6.8c.3-1.8 1.7-3.3 3.5-3.5l6.8-1-6.8-1zM92.9 50.3c-3-.4-5.3-2.8-5.8-5.8l-1.6-11.1-1.6 11.1c-.4 3-2.8 5.3-5.8 5.8L67 51.9l11.1 1.6c3 .4 5.3 2.8 5.8 5.8l1.6 11.1 1.6-11.1c.4-3 2.8-5.3 5.8-5.8l11.1-1.6-11.1-1.6z"/><path fill="#FFBC9C" d="M161.4 73.2c-1.8-.3-3.2-1.7-3.4-3.5l-1-6.9-1 6.9c-.3 1.8-1.6 3.2-3.4 3.5l-5.2.9 5.4 1c1.7.3 3 1.6 3.4 3.3l.9 4.6.9-4.6c.3-1.7 1.7-3 3.4-3.3l5.7-1-5.7-.9z"/><path fill="#B8E0FF" d="M130.7-27.4c-.6 1.7-2.5 2.6-4.2 2s-2.6-2.5-2-4.2c.3-1 2.4-3.6 4.1-5.8.4-.5 1-.7 1.6-.5s1 .8 1 1.4c0 2.8-.1 6.1-.5 7.1z"/><circle fill="#B8E0FF" cx="133.8" cy="-41.3" r="1.5"/></svg><!--					<i class="fa fa-tint text-6xl"></i>-->
+					<p class="py-4 text-xl font-bold">2. Watermark & Edit</p>
+					<p class="">Use our web editor to watermark your files with DWT and SVD technique to embed watermark images inside cover image.</p>
+				</div>
+				<div class="w-full md:w-1/3 px-4 pb-12 text-center">
+					<svg class="h-48 inline" xmlns="http://www.w3.org/2000/svg" viewBox="62 -63 150 150"><path fill="#B8E0FF" d="M87.3 66C73.3 66 62 54.7 62 40.7c0-.6 0-1.2.1-1.8 0-.6-.1-1.2-.1-1.8 0-13.5 10.7-24.6 24.1-25.2C92 .5 103.7-6.6 116.6-6.6c2.1 0 4.2.2 6.3.6 7.8-9.2 19.4-14.6 31.5-14.6 20.1 0 37.1 14.3 40.7 33.7C205 16.6 212 26.2 212 36.9c0 .6 0 1.2-.1 1.8 0 .6.1 1.3.1 1.9 0 13.9-11.3 25.3-25.3 25.3l-99.4.1z"/><path fill="#6CA3CF" d="M190.9 20.6c-2-18.4-17.6-32.7-36.5-32.7-12.2 0-23 6-29.7 15.1-2.6-.7-5.3-1.1-8.1-1.1-12.4 0-23.1 7.6-27.5 18.4-.6-.1-1.2-.1-1.8-.1-11.4 0-20.6 9.2-20.6 20.6s9.2 20.6 20.6 20.6h99.4c11.4 0 20.6-9.2 20.6-20.6 0-10-7-18.3-16.4-20.2z"/><path fill="#78B5E6" d="M190.9 16.9c-2-18.4-17.6-32.7-36.5-32.7-12.2 0-23 6-29.7 15.1-2.6-.7-5.3-1.1-8.1-1.1-12.4 0-23.1 7.6-27.5 18.4-.6-.1-1.2-.1-1.8-.1-11.4 0-20.6 9.2-20.6 20.6s9.2 20.6 20.6 20.6h99.4c11.4 0 20.6-9.2 20.6-20.6 0-10-7-18.3-16.4-20.2z"/><path fill="#FFBC9C" d="M110.9-11.4h-.4c-1.9-.2-3.3-1.9-3.1-3.9 1.1-9.8 9.3-17.2 19.2-17.2 1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5c-6.3 0-11.6 4.7-12.3 11-.1 1.8-1.7 3.1-3.4 3.1z"/><path fill="#FFBC9C" d="M98.2-11.4h-.4c-1.9-.2-3.3-1.9-3.1-3.9 1.8-16.3 15.5-28.6 31.9-28.6 1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5c-12.9 0-23.6 9.6-25 22.4-.2 1.8-1.7 3.1-3.4 3.1zM123.9-11.4h-.4c-1.9-.2-3.3-1.9-3.1-3.9.3-3.2 3-5.6 6.2-5.6 1.9 0 3.5 1.6 3.5 3.5 0 1.7-1.3 3.2-2.9 3.4-.4 1.6-1.8 2.6-3.3 2.6z"/><g><path fill="#5B89AE" d="M152-15.8c.8-.1 1.6-.1 2.4-.1.7 0 1.4 0 2.2.1M116.9-1.9c1.6 0 3.1.2 4.6.4"/><path fill="#FEE5DA" d="M121.5-1.5c1.1.2 2.2.4 3.2.7.1-.1.2-.3.3-.4M148.4-15.4c1.2-.2 2.4-.3 3.6-.4"/><path fill="#FFBC9C" d="M125.1-1.2c3.2-4.2 7.3-7.8 11.9-10.3"/><path fill="#FFB38F" d="M137-11.5c3.5-1.9 7.4-3.2 11.4-3.9"/><path fill="#5B89AE" d="M111.8 9.4c-3.9 0-7.3 2.3-8.8 5.9s-.7 7.6 2.1 10.4l25.2 25.2c1.8 1.8 4.2 2.8 6.7 2.8s4.9-1 6.7-2.8l25.2-25.2c2.7-2.7 3.5-6.8 2.1-10.4-1.5-3.6-4.9-5.9-8.8-5.9h-5.6v-25.2c-.7 0-1.4-.1-2.2-.1-.8 0-1.6 0-2.4.1V14h10.2c2 0 3.8 1.2 4.6 3 .8 1.9.3 4-1.1 5.4l-25.2 25.2c-.9.9-2.2 1.4-3.5 1.4s-2.6-.5-3.5-1.4l-25.2-25.2c-1.4-1.4-1.8-3.5-1.1-5.4.8-1.9 2.6-3 4.6-3h9.7V-1.5c-1.5-.3-3-.4-4.6-.4V9.4h-5.1z"/><path fill="#FEE5DA" d="M148.4 17.6h13.7c.6 0 1.1.3 1.3.8.2.5.1 1.1-.3 1.5L138 45.1c-.3.3-.6.4-1 .4s-.7-.1-1-.4l-25.2-25.2c-.4-.4-.5-1-.3-1.5s.7-.8 1.3-.8H125V-1.2c-.1.1-.2.3-.3.4-1.1-.3-2.1-.5-3.2-.7V14h-9.7c-2 0-3.8 1.2-4.6 3-.8 1.9-.3 4 1.1 5.4l25.2 25.2c.9.9 2.2 1.4 3.5 1.4s2.6-.5 3.5-1.4l25.2-25.2c1.4-1.4 1.8-3.5 1.1-5.4-.8-1.9-2.6-3-4.6-3H152v-29.8c-1.2.1-2.4.2-3.6.4v33z"/><path fill="#FFBC9C" d="M111.8 17.6c-.6 0-1.1.3-1.3.8s-.1 1.1.3 1.5L136 45.1c.3.3.6.4 1 .4v-57c-4.7 2.5-8.8 6.1-11.9 10.3v18.8h-13.3z"/><path fill="#FFB38F" d="M137 45.5c.4 0 .7-.1 1-.4l25.2-25.2c.4-.4.5-1 .3-1.5s-.7-.8-1.3-.8h-13.8v-33c-4.1.7-7.9 2-11.4 3.9v57z"/></g></svg><!--					<i class="fa fa-cloud-download text-6xl"></i>-->
+					<p class="py-4 text-xl font-bold">3. Export Files</p>
+					<p class="">Download your watermarked files on your device or export them to the cloud or a social
+						media platform.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="-mt-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#33649E" fill-opacity="1"
+				  d="M0,288L40,256C80,224,160,160,240,149.3C320,139,400,181,480,213.3C560,245,640,267,720,229.3C800,192,880,96,960,53.3C1040,11,1120,21,1200,37.3C1280,53,1360,75,1400,85.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+		</svg>
+	</div>
+
+	<!-- Key Watermarking Features -->
+	<div class="" id="learn">
+		<div class="container max-w-screen-lg px-8 py-4">
+			<div class="text-center">
+				<h3 class="text-4xl font-bold"><i class="fa-solid fa-key mr-2"></i>Key Features</h3>
+				<p class="text-xl text-gray-800">Everything you’ll ever need to accomplish your task.</p>
+			</div>
+			<div class="flex flex-wrap pt-12">
+				<div class="w-full md:w-1/2">
+					<div class="bg-white rounded shadow border border-gray-300">
+
+	<!-- Top Bar -->
+	<div class="h-8 bg-gray-200 border-b border-gray-300 rounded-t">
+		<div class="flex p-3">
+			<div class="bg-red rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-yellow-dark rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-green rounded-full h-2 w-2 p-1"></div>
+		</div>
+	</div>
+	<!-- Clickable Thumbnail -->
+	<a target="_blank" href="static\image\dwt.png">
+		<img src="static\image\dwt.png"
+			 data-src="static\image\dwt.png"
+			 alt="Custom signature logo"
+			 width="500"
+			 height="240"
+			 class="rounded-b w-full max-h-240">
+	</a>
+
+</div>				</div>
+				<div class="w-full md:w-1/2 pt-12 text-center">
+					<div class="px-4 sm:px-0 sm:pl-10">
+						<p class="text-2xl font-bold"><i class="fa-solid fa-image mr-2"></i>Custom DWT Watermark
+						</p>
+						<p class="pt-2 leading-normal">
+							Create a fully customized <a class="text-primary font-bold" href="water">DWT embedded watermarked image</a>We can see DWT PSNR and other values in the text area for DWT.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-wrap pt-12 sm:flex-row-reverse">
+				<div class="w-full md:w-1/2">
+					<div class="bg-white rounded shadow border border-gray-300">
+
+	<!-- Top Bar -->
+	<div class="h-8 bg-gray-200 border-b border-gray-300 rounded-t">
+		<div class="flex p-3">
+			<div class="bg-red rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-yellow-dark rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-green rounded-full h-2 w-2 p-1"></div>
+		</div>
+	</div>
+	<!-- Clickable Thumbnail -->
+	<a target="_blank" href="static\image\svd.png">
+		<img src="static\image\svd.png"
+			 data-src="static\image\svd.png"
+			 alt="Create custom watermarks"
+			 width="500"
+			 height="240"
+			 class="rounded-b w-full max-h-240">
+	</a>
+
+</div>				</div>
+				<div class="w-full md:w-1/2 pt-12 text-center">
+					<div class="sm:pr-10">
+						<p class="text-2xl font-bold"><i class="fa-solid fa-image mr-2"></i>Custom SVD Watermarks</p>
+						<p class="pt-2 leading-normal">
+							Create fully customized SVD watermarks. Embedded water marked image using SVD algorithm and we can see PSNR, MSE and SSIM for SVD.
+							Learn how to <strong><a href="water"
+													class="font-bold text-primary">creating a SVD watermark</a></strong>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-wrap pt-12">
+				<div class="w-full md:w-1/2">
+					<div class="bg-white rounded shadow border border-gray-300">
+
+	<!-- Top Bar -->
+	<div class="h-8 bg-gray-200 border-b border-gray-300 rounded-t">
+		<div class="flex p-3">
+			<div class="bg-red rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-yellow-dark rounded-full h-2 w-2 p-1 mr-2"></div>
+			<div class="bg-green rounded-full h-2 w-2 p-1"></div>
+		</div>
+	</div>
+	<!-- Clickable Thumbnail -->
+	<a target="_blank" href="static\image\extrac.png">
+		<img src="static\image\extrac.png"
+			 data-src="static\image\extrac.png"
+			 alt="Batch watermark files with one click"
+			 width="500"
+			 height="240"
+			 class="rounded-b w-full max-h-240">
+	</a>
+
+</div>				</div>
+				<div class="w-full md:w-1/2 py-12 text-center">
+					<div class="px-4 sm:px-0 sm:pl-10">
+						<p class="text-2xl font-bold"><i class="fa-solid fa-image mr-2"></i>Custom Extraction Images</p>
+						<p class="pt-2 leading-normal">Use our web editor to <strong><a href="water"
+							class="font-bold text-primary">Extraction </a></strong>all of Watermark photos with a few
+							clicks. You can individually file upload Watermarked image and then extract embedded image from it.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="-mb-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#0f172a" fill-opacity="1"
+				  d="M0,192L40,170.7C80,149,160,107,240,80C320,53,400,43,480,69.3C560,96,640,160,720,165.3C800,171,880,117,960,133.3C1040,149,1120,235,1200,261.3C1280,288,1360,256,1400,240L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+		</svg>
+	</div>
+
+	<!-- Much More Than Watermarking -->
+	
+
+	<div id="about" class="bg-gray-900 text-gray-100">
+		<div class="container max-w-screen-lg px-8 py-4">
+			<div class="text-center">
+				<h3 class="text-4xl font-bold"><i class="fa-solid fa-tag mr-2"></i>About Us</h3>
+				<p class="text-xl">Learn more about our journey and mission to deliver the best watermarking technology.</p>
+			</div>
+			<br>
+			<div class="text-center">
+				<div class="text-center">
+					<h3 class="text-3xl font-bold">Our Story</h3>
+					<p class="text-xl">Our team started with a simple mission: to make digital watermarking accessible, secure, and high-quality. 
+						With a passion for innovation and technology, we embarked on developing a platform that leverages advanced techniques 
+						like Singular Value Decomposition (SVD) and Discrete Wavelet Transform (DWT) to create robust watermarks 
+						that blend seamlessly into images.</p>
+						<br>
+						<p class="text-xl">
+							Our journey has been fueled by a commitment to excellence, resulting in a platform that not only protects intellectual property 
+							but also delivers impressive image quality and accuracy in SSIM, PSNR, and MSE values.
+						</p>
+				</div>
+				<br>
+				<div class="text-center">
+					<h3 class="text-3xl font-bold">Our Mission</h3>
+					<p class="text-xl">
+						We believe that creators deserve the utmost protection for their work, and our mission is to provide tools that ensure that security 
+						without compromising quality. By integrating the latest advancements in digital watermarking, our goal is to be the trusted partner 
+						for photographers, designers, and businesses worldwide.
+					</p>
+					<br>
+					<p class="text-xl">
+						Our platform aims to empower users with control over their digital assets, enhancing both the aesthetic and technical integrity of each watermark.
+					</p>
+				</div>
+				
+			</div>
+			</div>
+			
+	</div>
+
+	<div class="bg-gray-200 -mt-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#0f172a" fill-opacity="1"
+				  d="M0,32L40,74.7C80,117,160,203,240,218.7C320,235,400,181,480,154.7C560,128,640,128,720,133.3C800,139,880,149,960,170.7C1040,192,1120,224,1200,234.7C1280,245,1360,235,1400,229.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+		</svg>
+	</div>
+
+	<!-- Watermark anything, anywhere -->
+	<div class="bg-gray-200">
+		<div class="container max-w-screen-lg px-8 py-4">
+			<div class="text-center">
+				<h3 class="text-4xl font-bold">Watermark</h3>
+				<h3 class="text-2xl">from Anywhere, at Anytime</h3>
+				<p class="text-xl mt-4">Our all-in-one web editor is accessible from any device</p>
+			</div>
+			<div class="flex flex-wrap pt-12">
+				<div class="w-full md:w-1/3 pb-12 px-4 text-center">
+					<svg class="h-48 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="187 -115.2 400 255.2"><path fill="#DFE8EE" d="M443.6 88.6c.9 6.5-3.6 12.5-10.1 13.4L278 123.9c-6.5.9-12.5-3.6-13.4-10.1L243.7-34.5c-.9-6.5 3.6-12.5 10.1-13.4l155.5-22c6.5-.9 12.5 3.6 13.4 10.1l20.9 148.4z"/><path fill="#8BB2D1" d="M408.3-55.2c-18.4 2.6-134 18.9-149.4 21.1 13.8 98 11.4 80.6 16.5 117l149.4-21.1c-.6-4-15.8-111.5-16.5-117z"/><path fill="#DFE8EE" d="M564 128.7c-.9 6.5-6.9 11-13.3 10.1L395 117.6c-6.5-.9-11-6.9-10.1-13.3l20.3-148.5c.9-6.5 6.9-11 13.3-10.1L574.1-33c6.5.9 11 6.9 10.1 13.3L564 128.7z"/><path fill="#6DA5D1" d="M407.3 50.4l-3.7 27 149.5 20.4c.6-4 15.3-111.6 16-117.1C553.6-21.4 444-36.4 429-38.4l-9.4-1.3c-1.9 14.3-11 80.4-12.3 90.1"/><path fill="#DFE8EE" d="M493 52.2c0 6.7-5.4 12.2-12.2 12.2H319.6c-6.7 0-12.2-5.4-12.2-12.2v-153.7c0-6.7 5.4-12.2 12.2-12.2h161.2c6.7 0 12.2 5.4 12.2 12.2V52.2z"/><path fill="#26B99A" d="M383.1-99h-28.2c3.7 3.2 6.1 7.9 6.1 13.1 0 9.5-7.7 17.3-17.3 17.3-9.6 0-17.3-7.7-17.3-17.3 0-5.3 2.4-10 6.1-13.1h-9.7v93.3l28.4-29.9 30.2 29.9L393.3-22l13.6 14.9 41.4-56 28.2 28.7 1.3 6.5V-99h-94.7z"/><path fill="#FBBB9C" d="M354.8-99h-22.3c-3.7 3.2-6.1 7.9-6.1 13.1 0 9.5 7.7 17.3 17.3 17.3 9.6 0 17.3-7.7 17.3-17.3-.1-5.2-2.4-9.9-6.2-13.1z"/><path fill="#37556D" d="M477.7-33.6L448.2-63 406.8-7l-13.6-14.9-11.8 16.3-20.9-20.7-9.3-9.2-10.9 11.4-17.5 18.5v27.9h154.9v-50.1z"/><path fill="#DFE8EE" d="M344-21.9c.1.8.6 1.6 1.4 1.9.8.3 1.7.2 2.3-.3l1.6-1.3c.2-.2.5-.2.7-.2.3 0 .5.2.6.4l.6.9c.4.7 1.1 1 1.9 1 .8 0 1.4-.5 1.8-1.2l.6-1.3c.1-.3.4-.5.7-.6s.7 0 .9.1l3.1 1.9c.3.2.8.2 1.1-.1.3-.2.5-.7.3-1.1l-.6-2.1c0-.1 0-.3.1-.3.1-.1.2-.1.3-.1l.4.2c.1.1.3 0 .4-.1.1-.1.1-.3 0-.4l-11.3-11-10.2 10.8c-.2.2-.3.6-.1.9.1.3.5.4.8.4l1.5-.3c.2 0 .4 0 .6.1s.3.3.3.5l.2 1.3zM385.9-11.4c-.1.1-.3 0-.3-.1-.1-.1-.1-.2 0-.4l7.6-10.3 9.5 10.3.1.5c.1.4 0 .8-.4 1.1-.3.3-.8.3-1.2.1l-1.5-.9c-.2-.1-.5-.1-.6.2l-1 1.6c-.2.3-.4.5-.7.5-.3 0-.6 0-.9-.3l-.6-.5c-.2-.2-.4-.2-.6 0l-1 1c-.2.2-.5.3-.9.3-.3 0-.6-.2-.7-.5l-.9-1.6c-.1-.2-.4-.4-.6-.4-.3-.1-.5 0-.7.2l-1 .8c-.3.2-.6.3-1 .2-.3-.1-.6-.4-.7-.7l-.3-1.1c0-.2-.2-.3-.3-.4-.2-.1-.4-.1-.5 0l-.8.4zM436.1-44.6c-.2.2-.6.1-.8-.1-.2-.2-.2-.5-.1-.8l13-17.5 10.7 10.6c.3.3.4.9.2 1.3s-.8.6-1.2.5l-1.1-.3c-.8-.2-1.6.2-1.9 1l-.5 1.5c-.2.5-.5.8-1 1-.5.1-1 .1-1.4-.2l-1.6-1.2c-.3-.2-.6-.3-.9-.2-.3.1-.6.3-.8.6l-1.8 3.4c-.2.4-.6.6-1.1.6-.4 0-.8-.3-1-.8l-.7-2c-.2-.5-.6-1-1.2-1.1-.5-.2-1.1-.1-1.6.2l-5.2 3.5z"/><g><path fill="#243B4B" d="M453.4 5c-4.1 7.5-6.9 15.5-9.5 23.6-2.8 9-5.7 18.6-6 28.1 0 1.6 2.1 1.7 2.6.4 1.9-5.2 2.4-10.6 4.1-15.8 1.1-3.5 2.7-8.3 1.8-12.1-1.2-5.3-7.6-3.7-11.5-2.6-7.2 2.2-14 6.1-20 10.6-3.5 2.6-9.1 6.8-8.4 11.8.1.4.5.8.9.9 12.7 2.8 25.8-.6 37.6-5.7 11.9-5.1 22.9-12.1 32-21.3 1.3-1.3 5.6-6.4 3.5-8.4-2.8-2.7-6.4-1.3-9.4.4-6.3 3.5-12.8 8.4-17.7 13.7-5 5.5-2.4 9.6 4.5 10.6 9 1.3 19.2-.5 28-2.1 7.1-1.2 14.2-3 21.3-4.5 6.5-1.5 18.5-6 21.5 2.9 3 9.2 11.8 4 16.2-1.1 2.5-2.9 4.4-6.4 7.3-8.9 1.3-1.1-.6-3-1.9-1.9-3.2 2.8-5.4 6.7-8.1 9.9-1.7 2-3.7 3.8-6.3 4.6-4.5 1.3-4.3-4.1-6.2-6.4-2.6-3.2-5.3-3.9-9.3-4-6.9-.1-14.3 2.5-21 4-11.9 2.7-24 5-36.3 5.2-3.1.1-12.4.1-8.9-5.1 2.8-4.1 7.5-7.4 11.5-10 3-2 6.1-4.6 9.5-5.8.7.7 1.3 1.5 2 2.2-.6 1.1-1.4 2-2.2 2.9-.9 1-2 1.9-3 2.8-2.8 2.6-5.8 5-8.9 7.2-12.1 8.8-27.2 15.5-42.2 17.1-3.8.4-7.6.2-11.3-.4-1.4-.2.4-2.4 1-3.2 2.6-3.3 6.2-5.7 9.6-8 5.6-3.6 14.9-9.6 22-8.3 4.1.7-3.5 25.5-4.5 28.1.9.1 1.8.2 2.6.4.2-8.9 3.3-17.1 5.3-25.6s5.6-17.1 9.7-24.8c1.3-1.6-1-2.9-1.9-1.4z"/></g><g><path fill="#243B4B" d="M324 115.6c-.2 0-.3 0-.5-.1l-2-.5c-1.1-.3-1.8-1.4-1.5-2.5s1.4-1.8 2.5-1.5c.3-1.1 1.4-1.8 2.5-1.5s1.8 1.4 1.5 2.5l-.5 2c-.2 1-1 1.6-2 1.6zM312.4 112.6c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5.3-1.1 1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zm-13.8-3.5c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5s1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zm-13.8-3.5c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5.3-1.1 1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zm-13.8-3.5c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5.3-1.1 1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2.9-1 1.6-2 1.6zM257.2 98.5c-.2 0-.3 0-.5-.1l-2-.5c-.5-.1-1-.5-1.3-1s-.4-1-.2-1.6l.5-2c.3-1.1 1.4-1.8 2.5-1.5 1.1.3 1.8 1.4 1.5 2.5 1.1.3 1.7 1.4 1.5 2.5-.2 1.1-1 1.7-2 1.7zM258 87.4c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5l.9-3.7c.3-1.1 1.4-1.8 2.5-1.5s1.8 1.4 1.5 2.5l-.9 3.7c-.3 1-1.1 1.6-2 1.6zm3.1-12.2c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5l.9-3.7c.3-1.1 1.4-1.8 2.5-1.5s1.8 1.4 1.5 2.5l-.9 3.7c-.2.9-1.1 1.6-2 1.6zM264.2 62.9c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5l.5-2c.3-1.1 1.4-1.8 2.5-1.5l2 .5c1.1.3 1.8 1.4 1.5 2.5-.3 1.1-1.4 1.8-2.5 1.5-.2 1-1 1.6-2 1.6zM321.9 75.5c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5s1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zM308.1 72c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5s1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2.9-1.1 1.6-2 1.6zm-13.8-3.6c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5.3-1.1 1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zm-13.8-3.5c-.2 0-.3 0-.5-.1l-4.1-1.1c-1.1-.3-1.8-1.4-1.5-2.5.3-1.1 1.4-1.8 2.5-1.5l4.1 1.1c1.1.3 1.8 1.4 1.5 2.5-.2 1-1.1 1.6-2 1.6zM333 80.4c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5-1.1-.3-1.8-1.4-1.5-2.5s1.4-1.8 2.5-1.5l2 .5c.5.1 1 .5 1.3 1 .3.5.4 1 .2 1.6l-.5 2c-.2.9-1.1 1.5-2 1.5zM326.7 105c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5l.9-3.7c.3-1.1 1.4-1.8 2.5-1.5 1.1.3 1.8 1.4 1.5 2.5l-.9 3.7c-.2 1-1 1.6-2 1.6zm3.2-12.3c-.2 0-.3 0-.5-.1-1.1-.3-1.8-1.4-1.5-2.5l.9-3.7c.3-1.1 1.4-1.8 2.5-1.5s1.8 1.4 1.5 2.5l-.9 3.7c-.3 1-1.1 1.6-2 1.6z"/></g><g><path fill="#243B4B" d="M321.3 108.9l-25.7-6.6.3-1.1 24.6 6.3 1.4-5.6 1.1.3-1.7 6.7zm-35-8.9l-25.1-6.4.3-1.1 25.1 6.4-.3 1.1zm39-7l-1.1-.3 3.3-12.8-11.2-2.9.3-1.1 12.3 3.1-3.6 14zm-62-8.5l-1.1-.3 5.3-20.8 5.4 1.4-.3 1.1-4.3-1.1-5 19.7zm43.8-9.8L282 68.3l.3-1.1 25.1 6.4-.3 1.1z"/></g><g><path fill="#243B4B" d="M208.9-9.3c-3.7-3.7-4.2-9.7-1-13.9 3.1-4 8.4-5.3 12.9-3.3 3.7-3.1 9.2-3.4 13.3-.3 4.7 3.5 5.6 10.2 2.1 14.9L225 3 210-8.3c-.4-.3-.7-.7-1.1-1z"/></g><g><path fill="#243B4B" d="M222.6 13.8c-1.1 0-2.2-.1-3.3-.2-.6-.1-1-.6-.9-1.2.1-.6.6-1 1.2-.9 3 .3 6 .2 8.9-.5.6-.1 1.1.2 1.2.8.1.6-.2 1.1-.8 1.2-2 .6-4.2.8-6.3.8zM210.3 11c-.2 0-.3 0-.5-.1-2.9-1.4-5.5-3.3-7.8-5.6-.4-.4-.4-1.1 0-1.5s1.1-.4 1.5 0c2.1 2.1 4.6 3.9 7.3 5.2.5.3.7.9.5 1.4-.3.4-.6.6-1 .6zm27.2-1.4c-.3 0-.7-.2-.9-.5-.3-.5-.2-1.1.3-1.4 2.5-1.6 4.8-3.6 6.7-6 .4-.4 1-.5 1.5-.2.4.4.5 1 .2 1.5-2 2.5-4.5 4.7-7.2 6.4-.2.1-.4.2-.6.2zM197.3-2.3c-.4 0-.8-.2-.9-.6-1.4-2.9-2.2-6.1-2.6-9.3-.1-.6.4-1.1.9-1.1.6-.1 1.1.4 1.1.9.3 3 1.1 5.9 2.4 8.6.2.5 0 1.1-.5 1.4-.1.1-.2.1-.4.1zM249-4.9c-.1 0-.2 0-.3-.1-.5-.2-.8-.8-.6-1.3 1-2.8 1.5-5.8 1.5-8.8 0-1.8-.2-3.6-.5-5.3-.1-.6.3-1.1.8-1.2.6-.1 1.1.3 1.2.8.4 1.9.6 3.8.6 5.7 0 3.3-.5 6.5-1.6 9.5-.3.4-.7.7-1.1.7zm-53.5-15.8h-.2c-.6-.1-.9-.7-.8-1.3.8-3.1 2-6.1 3.8-8.9.3-.5 1-.6 1.4-.3.5.3.6 1 .3 1.4-1.6 2.5-2.8 5.3-3.5 8.2-.1.6-.5.9-1 .9zm51.1-7.7c-.4 0-.7-.2-.9-.5-1.5-2.6-3.5-4.9-5.8-6.8-.4-.4-.5-1-.1-1.5.4-.4 1-.5 1.5-.1 2.5 2.1 4.6 4.5 6.3 7.3.3.5.1 1.1-.4 1.4-.2.1-.4.2-.6.2zm-41-7.8c-.3 0-.6-.1-.8-.4-.4-.5-.3-1.1.2-1.5 2.6-2 5.4-3.5 8.5-4.5.5-.2 1.1.1 1.3.7.2.5-.1 1.1-.7 1.3-2.9.9-5.5 2.4-7.9 4.2-.1.1-.4.2-.6.2zm26.7-4.1c-.1 0-.2 0-.4-.1-2.8-1-5.8-1.6-8.8-1.7-.6 0-1-.5-1-1.1s.5-1 1.1-1c3.3.1 6.4.7 9.5 1.8.5.2.8.8.6 1.3-.1.6-.5.8-1 .8z"/></g><g><path fill="#243B4B" d="M222.6 18.7c-1.7 0-3.3-.1-5-.4-.7-.1-1.1-.7-1-1.4.1-.7.7-1.1 1.4-1 1.5.2 3.1.3 4.6.3 7.1 0 13.8-2.3 19.4-6.7.5-.4 1.3-.3 1.7.2.4.5.3 1.3-.2 1.7-6 4.8-13.2 7.3-20.9 7.3zm-7.8-.9h-.3c-9-2.2-16.7-8.1-21.3-16.1-.3-.6-.1-1.3.5-1.7.6-.3 1.3-.1 1.7.5 4.3 7.5 11.5 12.9 19.8 15 .7.2 1 .8.9 1.5-.3.4-.8.8-1.3.8zm30.3-8.1c-.3 0-.6-.1-.9-.4-.5-.5-.4-1.3 0-1.7 6.3-6 9.8-14.1 9.8-22.8 0-.2 0-.4.1-.5-.1-.2-.1-.3-.1-.5-.3-8.6-4.1-16.7-10.5-22.5-.5-.4-.5-1.2-.1-1.7s1.2-.5 1.7-.1c6.9 6.1 11 15 11.3 24.2 0 .2 0 .4-.1.5.1.2.1.3.1.5 0 9.4-3.7 18.1-10.5 24.5-.2.4-.5.5-.8.5zM192.9-.6c-.5 0-.9-.3-1.1-.7-2-4.4-3-9-3-13.9 0-4.4.8-8.8 2.5-12.9.3-.6 1-.9 1.6-.7.6.3.9 1 .7 1.6-1.6 3.8-2.3 7.8-2.3 11.9 0 4.5.9 8.8 2.7 12.9.3.6 0 1.3-.6 1.6-.2.2-.4.2-.5.2zm.9-28.5c-.2 0-.4 0-.6-.1-.6-.3-.8-1-.5-1.6 4.3-8.3 11.9-14.4 20.7-16.9.6-.2 1.3.2 1.5.8.2.6-.2 1.3-.8 1.5-8.2 2.3-15.3 8-19.3 15.6-.2.4-.6.7-1 .7zm48.1-11.1c-.2 0-.5-.1-.7-.2-5.4-4-11.8-6.1-18.6-6.1-1.9 0-3.8.2-5.6.5-.7.1-1.3-.3-1.4-1-.1-.7.3-1.3 1-1.4 2-.4 4-.5 6-.5 7.2 0 14.2 2.3 20 6.5.5.4.7 1.2.3 1.7-.3.3-.6.5-1 .5z"/></g></svg><!--					<i class="fa fa-image text-6xl"></i>-->
+					<!-- <p class="py-4 text-xl font-bold">Images</p> -->
+					<p class="text-xl text-center py-4 font-bold"><i class="fa-solid fa-image mr-2"></i><strong>Watermark Images</strong></p>
+					<!-- <p class="leading-normal">Watermark directly in the web editor.</p> -->
+					<p class="leading-normal">Watermark photos of any image format. From the ordinary JPEG files to raw camera format images.</p>
+					
+				</div>
+				<div class="w-full md:w-1/3 pb-12 px-4 text-center">
+					<svg class="h-48 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="-457 -181.5 950 388"><path fill="#FFF" d="M-198.8 181.1c0-23.3-18.8-42.1-42.1-42.1-4.2 0-8.3.6-12.1 1.8-4.4-10.4-14.7-17.7-26.8-17.7h-1.4c-5-20.4-23.5-35.4-45.3-35.4-15.6 0-29.4 7.6-37.9 19.5-1.8-.9-3.9-1.4-6-1.4-6.6 0-12.1 4.6-13.5 10.8-.7-.1-1.5-.1-2.2-.1-17.8 0-32.3 14.4-32.3 32.3 0 .4 0 .8.1 1.2-2-.9-4.3-1.4-6.6-1.4-8.9 0-16.1 7.2-16.1 16.1 0 .3 0 .7.1 1-3.6.7-6.3 3.8-6.3 7.6 0 4.3 3.4 7.7 7.7 7.7h159.6l81.1.1zM357.4-.5c-.9-9.8-9.1-17.5-19.1-17.5-4.9 0-9.3 1.8-12.7 4.8-7.9-11.1-20.9-18.3-35.6-18.3-6.4 0-12.5 1.4-17.9 3.9-3.7-5.4-10-8.9-17-8.9-2.5 0-4.8.5-7 1.2-10.3-22.9-33-38.7-59.4-38.7-29.8 0-54.7 20.1-62.5 47.3-8.7-8.6-20.8-13.9-34-13.9-15.6 0-29.5 7.4-38.3 18.9C45-37.8 27.8-48.8 8.1-48.8c-20 0-37.3 11.1-46.1 27.6-5.3-2.5-11.2-4-17.5-4-7.1 0-13.8 1.9-19.7 5.1-7.7-6.7-17.8-10.8-28.8-10.8-17.3 0-32.3 10.1-39.2 24.8-13.4.2-24.9 9-28.9 21.2-1.2-.2-2.4-.3-3.7-.3-11.4 0-20.7 9.2-20.7 20.7s9.2 20.7 20.7 20.7h531.9c15.6 0 28.3-12.6 28.3-28.3 0-15.4-12.1-27.7-27-28.4z"/><path fill="#C6CFD4" d="M-198.6 101.9c0 7.7 6.3 14 14 14h360.4c7.7 0 14-6.3 14-14V72.7h-388.5v29.2z"/><path fill="#213342" d="M-198.6 72.7v-233.8c0-7.7 6.3-14 14-14h360.4c7.7 0 14 6.3 14 14V72.8h-388.5v-.1z"/><path fill="#5B89AE" d="M-179.9-156.8h351.1V53.5h-351.1z"/><path fill="#5F90B6" d="M171.3-130.7L-112.4 52.4h-67.5v-209.2h351.2z"/><path fill="#C6CFD4" d="M57.8 165.4c-6.2-.5-11.4-4.8-13-10.8L34.3 116H-43l-10.4 38.7c-1.6 6-6.8 10.3-13 10.8l-55.6 4.3c0 3.6 2.9 6.6 6.6 6.6h222.3c3.6 0 6.6-2.9 6.6-6.6l-55.7-4.4z"/><path fill="#B2B8BD" d="M37.4 127.5H-46l2.9-11.4h77.6z"/><path fill="#DFE8EE" d="M-4.2 103.6c-5.5 0-9.9-4.3-10.2-9.7v.5c0 5.6 4.6 10.2 10.2 10.2S6 100 6 94.4v-.5c-.3 5.4-4.8 9.7-10.2 9.7z"/><circle fill="#B2B8BD" cx="-4.2" cy="93.4" r="10.2"/><path fill="#B2B8BD" d="M113.5 169.7c0 3.6-2.9 6.6-6.6 6.6h-222.3c-3.6 0-6.6-2.9-6.6-6.6h235.5z"/><path fill="#DFE8EE" d="M175.9 113.9h-360.4c-7.7 0-14-6.3-14-14v2.6c0 7.7 6.3 14 14 14h360.4c7.7 0 14-6.3 14-14v-2.6c.1 7.6-6.2 14-14 14z"/><path fill="#CFD9DE" d="M113.5 169.7h-235.6l38.9-3.1H73z"/><g><path fill="#243B4B" d="M-341.7-26.1c0-4.6 3.8-8.4 8.4-8.4h151c4.6 0 8.4 3.8 8.4 8.4v216c0 4.6-3.8 8.4-8.4 8.4h-151c-4.6 0-8.4-3.8-8.4-8.4v-216z"/><circle fill="#37556D" cx="-257.9" cy="182.8" r="7.5"/><circle fill="#16212B" cx="-257.9" cy="181.7" r="7.5"/><circle fill="#627381" cx="-257.9" cy="-23.1" r="2.6"/><path fill="#068AAF" d="M-330.3-11.1H-185v178h-145.3z"/><path fill="#0490B6" d="M-185 49.5l-145.3 100.2V-11.1H-185z"/><g><path fill="#37556D" d="M-110.6 194.6c0 5.2-4.2 9.4-9.4 9.4h-66.3c-5.2 0-9.4-4.2-9.4-9.4V55.5c0-5.2 4.2-9.4 9.4-9.4h66.3c5.2 0 9.4 4.2 9.4 9.4v139.1z"/><path fill="#F388AD" d="M-190.9 67.1h75.5v115.7h-75.5z"/><path fill="#F495B6" d="M-190.9 67.1h75.5v43.6l-75.5 48.3z"/><path fill="#243B4B" d="M-143.2 61c0 1.1-1.1 2-2.4 2h-15.1c-1.3 0-2.4-.9-2.4-2s1.1-2 2.4-2h15.1c1.3-.1 2.4.8 2.4 2z"/><path fill="#5B89AE" d="M-147.1 194.4c0 3.4-2.7 6.1-6.1 6.1-3.4 0-6.1-2.7-6.1-6.1 0-3.4 2.7-6.1 6.1-6.1 3.4 0 6.1 2.7 6.1 6.1z"/><path fill="#243B4B" d="M-147.1 193.2c0 3.4-2.7 6.1-6.1 6.1-3.4 0-6.1-2.7-6.1-6.1 0-3.4 2.7-6.1 6.1-6.1 3.4-.1 6.1 2.7 6.1 6.1z"/><path fill="#627381" d="M-150.8 52.4c0 1.3-1.1 2.4-2.4 2.4-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3.1 2.4 1.1 2.4 2.4z"/></g></g><g><path fill="#37556D" d="M107.6 186.8V2.1c0-6.1 5-11.1 11.1-11.1h284.7c6.1 0 11.1 5 11.1 11.1v184.8H107.6z"/><path fill="#C6CFD4" d="M442.2 190.5c0 8.8-7.2 16-16 16h-330c-8.8 0-16-7.2-16-16v-4.2h362v4.2z"/><path fill="#26B99A" d="M122.7 5.6h277.4v166.1H122.7z"/><path fill="#39BB9F" d="M399.1 20.9L164.2 171.7h-41.5V5.6h277.4z"/><path fill="#DFE8EE" d="M289.6 186.2c0 3.6-2.9 6.5-6.5 6.5h-43.9c-3.6 0-6.5-2.9-6.5-6.5h56.9z"/></g><path opacity=".5" fill="#FFF" d="M-172.5-101.8c-2-18.5-17.7-33-36.8-33-12.3 0-23.2 6-29.9 15.2-2.6-.7-5.3-1.1-8.2-1.1-12.5 0-23.2 7.6-27.7 18.5-.6-.1-1.2-.1-1.8-.1-11.4 0-20.8 9.3-20.8 20.8s9.3 20.8 20.8 20.8h100.2c11.4 0 20.8-9.3 20.8-20.8-.1-10-7.2-18.3-16.6-20.3z"/><path fill="#FFF" d="M347.9-125.9c-.6 0-1.1 0-1.7.1-4.3-10.3-14.4-17.6-26.4-17.6-2.7 0-5.3.4-7.8 1.1-6.4-8.7-16.7-14.4-28.5-14.4-18.1 0-33.1 13.7-35 31.4 0 21.6 17.4 39 39 39h60.3c10.9 0 19.8-8.8 19.8-19.8s-8.9-19.8-19.7-19.8z"/><path opacity=".5" fill="#FFF" d="M483.8 54.1c0-13.2-10.7-24-24-24h-1.1C454.5 13.4 439.4 1 421.4 1c-12.8 0-24.3 6.3-31.3 16-1.5-.7-3.2-1.1-5-1.1-5.5 0-10 3.8-11.1 8.9-.6 0-1.2-.1-1.8-.1-14.7 0-26.7 11.9-26.7 26.7s11.9 26.7 26.7 26.7h87.7c13.2 0 23.9-10.8 23.9-24z"/><path fill="#FFF" d="M-329.8-140.4c-1.1-9.3-9-16.4-18.6-16.4-8 0-14.9 5.1-17.5 12.2-1.4-.5-2.9-.8-4.5-.8-7.2 0-13 5.8-13 13s5.8 13 13 13h40.4c5.8 0 10.5-4.7 10.5-10.5 0-5.7-4.6-10.3-10.3-10.5z"/><path fill="#94999E" d="M-4.2 174.9c-59.1 0-107 .6-107 1.4h214c-.2-.8-48-1.4-107-1.4z"/><path fill="#DFE8EE" d="M80.2 186.2h362v2.4h-362z"/><path fill="#DFE8EE" d="M426.8 206.5s15.3-.1 15.3-17.8v-1.2h-6.5s6.6 12.3-8.8 19"/></svg><!--					<i class="fa fa-mobile-alt text-6xl"></i>-->
+					<p class="text-xl text-center py-4 font-bold"><i class="fa-solid fa-mobile mr-2"></i>Mobile accessible</p>
+					<p class="leading-normal">Access and edit your files on the go through your mobile device. No
+						download necessary.</p>
+				</div>
+				<div class="w-full md:w-1/3 pb-12 px-4 text-center">
+					<svg class="h-48 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path fill="#FED6C6" d="M20.6 19c0 .2 0 .4-.1.6-.1.2-.3.3-.5.3l-17 2c-.4.1-.8-.3-.8-.7L0 4.3c0-.4.3-.8.7-.9l17-2.1c.4 0 .8.3.9.7l2 17z"/><path fill="#35546C" d="M1.545 4.788l15.487-1.866 1.615 13.403L3.159 18.19z"/><path fill="#FEDACB" d="M23 21.2c-.1.4-.4.7-.9.7l-17-2c-.4-.1-.7-.4-.7-.9l2-17c.1-.4.4-.7.8-.7l17 2c.4 0 .7.4.7.8L23 21.2z"/><path fill="#527A9C" d="M7.853 2.922l15.591 1.846-1.587 13.407L6.265 16.33z"/><g><path fill="#FEF1EC" d="M23.1 22.9c0 .4-.4.8-.8.8H5.2c-.4 0-.8-.4-.8-.8V5.8c.1-.5.4-.8.8-.8h17.1c.4 0 .8.4.8.8v17.1z"/><path fill="#5B89AE" d="M6 6.5h15.7V20H6z"/></g><g><path fill="#547EA1" d="M19.3 12.6h-.1c-.6-2.1-2.4-3.6-4.7-3.6-1.6 0-3 .8-3.9 2-.2-.1-.4-.2-.6-.2-.7 0-1.2.5-1.4 1.1h-.2c-1 0-1.9.4-2.5 1.1v4.3c.6.7 1.5 1.1 2.5 1.1h10.8c.9 0 1.8-.5 2.3-1.1v-3.7c-.4-.6-1.3-1-2.2-1z"/><path fill="#FED2C1" d="M5.2 15.2c0 .8.3 1.6.8 2.1V13c-.5.6-.8 1.4-.8 2.2zM21.6 13.7v3.7c.4-.5.6-1.1.6-1.8.1-.8-.2-1.4-.6-1.9z"/><g><path fill="#6DA5D1" d="M8.5 17.5c-1.9 0-3.6-1.6-3.6-3.6 0-1.9 1.6-3.5 3.6-3.5.2-.7.8-1.1 1.6-1.1.2 0 .4 0 .5.1.9-1.2 2.4-1.9 3.9-1.9 2.2 0 4.2 1.5 4.8 3.6 1.8 0 3.1 1.4 3.1 3.2 0 1.8-1.4 3.2-3.2 3.2H8.5z"/><path fill="#FEF1EC" d="M14.5 7.7c2.2 0 4.1 1.5 4.6 3.6h.1c1.6 0 3 1.3 3 3s-1.3 2.9-3 2.9H8.5c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3h.2c.2-.6.7-1.1 1.4-1.1.2 0 .4.1.6.2.8-1.2 2.3-2 3.8-2m0-.5c-1.6 0-3 .7-4 1.9-.1-.1-.3-.1-.4-.1-.8 0-1.4.4-1.7 1.1-2 .1-3.7 1.8-3.7 3.8 0 2.1 1.7 3.8 3.8 3.8h10.8c1.9 0 3.4-1.5 3.4-3.4 0-1.8-1.4-3.3-3.2-3.5-.7-2.1-2.7-3.6-5-3.6z"/></g><g><path fill="#FEE5DA" d="M13.7 9.9c.2 0 .4.1.5.2l3.9 3.9c.2.2.3.6.2.8-.1.3-.4.5-.7.5h-1.5v1.9h-4.7v-1.9H9.8c-.3 0-.6-.2-.7-.5-.1-.2 0-.6.2-.8l3.9-3.9c.1-.1.3-.2.5-.2z"/><path fill="#FFBC9C" d="M15.6 17.2v-2.4h2c.1 0 .2-.1.2-.1 0-.1 0-.2-.1-.2l-3.9-3.9-.1-.1v6.7h1.9z"/><path fill="#FFB38F" d="M9.7 14.4c-.1.1-.1.1-.1.2s.1.1.2.1H12v2.4h1.8v-6.8c-.1 0-.1 0-.1.1l-4 4z"/></g></g></svg><!--					<i class="fal fa-phone-laptop text-6xl"></i>-->
+					<p class="py-4 text-xl font-bold"><i class="fa-solid fa-upload mr-2"></i>Upload from Devices</p>
+					<p class="">Upload files from your computer, phone or tablet. Upload Image files at a time by selecting them in.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-gray-200 -mb-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#33649E" fill-opacity="1"
+				  d="M0,160L30,170.7C60,181,120,203,180,213.3C240,224,300,224,360,202.7C420,181,480,139,540,106.7C600,75,660,53,720,69.3C780,85,840,139,900,154.7C960,171,1020,149,1080,122.7C1140,96,1200,64,1260,53.3C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+		</svg>
+	</div>
+
+	<div class="bg-primary-darker">
+	<div class="container max-w-screen-lg px-8 py-4">
+		<div class="text-center">
+			<h2 class="text-4xl font-bold text-white"><i class="fa-regular fa-comment mr-2"></i>What Our Customers Say</h2>
+			<p class="text-xl text-white">Watermark is trusted by thousands of professionals and businesses</p>
+		</div>
+		<div class="flex flex-wrap py-12">
+			<div class="w-full md:w-1/3 p-4">
+				<div class="shadow-lg rounded-lg bg-white p-8">
+					<div class="text-center">
+						<img src="static\image\testimonial-1.png"
+							 data-src="static\image\testimonial-1.png"
+							 class="rounded-full inline"
+							 alt="Testimonial 1"
+							 width="100"
+							 height="100">
+					</div>
+					<div>
+						<p class="py-4">
+							<sup class="text-gray-600 pr-1"><i class="fa-solid fa-quote-left"></i></sup>There is nothing better than Watermark. It can easily batch process hundreds of files while watermarking, resizing, and re-touching them simultaneously.<sup class="text-gray-600 pl-1"><i class="fa-solid  fa-quote-right"></i></sup>
+						</p>
+						<p class="uppercase font-bold text-gray-600 text-right">Michael Archambault</p>
+						<p class="uppercase font-bold text-gray-500 text-sm text-right">Apple</p>
+					</div>
+				</div>
+			</div>
+			<div class="w-full md:w-1/3 p-4">
+				<div class="shadow-lg rounded-lg bg-white p-8">
+					<div class="text-center">
+						<img src="static\image\wsj.jpg"
+							 data-src="static\image\wsj.jpg"
+							 class="rounded-full inline"
+							 alt="Testimonial 2"
+							 width="100"
+							 height="100">
+					</div>
+					<div>
+						<p class="py-4">
+							<sup class="text-gray-600 pr-1"><i class="fa-solid  fa-quote-left"></i></sup>We use Watermark for adding credits to photos and videos from news agencies before we share them on Twitter.<sup class="text-gray-600 pl-1"><i class="fa-solid  fa-quote-right"></i></sup>
+						</p>
+						<p class="uppercase font-bold text-gray-600 text-right">Sarah Marshall</p>
+						<p class="uppercase font-bold text-gray-500 text-sm text-right">The Wall Street Journal</p>
+					</div>
+				</div>
+			</div>
+			<div class="w-full md:w-1/3 p-4">
+				<div class="shadow-lg rounded-lg bg-white p-8">
+					<div class="text-center">
+						<img src="static\image\testimonial-2.png"
+							 data-src="static\image\testimonial-2.png"
+							 class="rounded-full inline"
+							 alt="Testimonial 3"
+							 width="100"
+							 height="100">
+					</div>
+					<div>
+						<p class="py-4">
+							<sup class="text-gray-600 pr-1"><i class="fa-solid  fa-quote-left"></i></sup>It's super easy to use. You can customize your watermark and even use your own company logo. The customer service is excellent and all of my questions have been answered.<sup class="text-gray-600 pl-1"><i class="fa-solid  fa-quote-right"></i></sup>
+						</p>
+						<p class="uppercase font-bold text-gray-600 text-right">Alice Delore</p>
+						<p class="uppercase font-bold text-gray-500 text-sm text-right">SaleHoo</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-gray-700 -mt-1">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#33649E" fill-opacity="1"
+			  d="M0,96L40,112C80,128,160,160,240,170.7C320,181,400,171,480,149.3C560,128,640,96,720,90.7C800,85,880,107,960,122.7C1040,139,1120,149,1200,149.3C1280,149,1360,139,1400,133.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+	</svg>
+</div>
+<!-- Much More Than Watermarking -->
+
+
+<div id="contact" class="bg-gray-700 text-gray-100">
+	<div class="container max-w-screen-lg px-8 py-4">
+		<div class="text-center">
+			<h3 class="text-4xl font-bold"><i class="fa-solid fa-tag mr-2"></i>Contact</h3>
+			<!-- <p class="text-xl">Learn more about our journey and mission to deliver the best watermarking technology.</p> -->
+		</div>
+		<br>
+		
+		<div class="text-center container-1">
+			<div class="content">
+			  <div class="left-side">
+				<div class="address details">
+				  <i class="fa-solid fa-map-marker-alt"></i>
+				  <div class="text-xl font-bold">Address</div>
+				  <div class="text-one">Surkhet, NP12</div>
+				  <div class="text-two">Birendranagar 06</div>
+				</div>
+				<div class="phone details">
+				  <i class="fa-solid fa-phone-alt"></i>
+				  <div class="text-xl font-bold">Phone</div>
+				  <div class="text-one">+0098 9893 5647</div>
+				  <div class="text-two">+0096 3434 5678</div>
+				</div>
+				<div class="email details">
+				  <i class="fa-solid fa-envelope"></i>
+				  <div class="text-xl font-bold">Email</div>
+				  <div class="text-one">codinglab@gmail.com</div>
+				  <div class="text-two">info.codinglab@gmail.com</div>
+				</div>
+			  </div>
+			  <div class="right-side">
+				<div class="topic-text">Send us a message</div>
+				<p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+			  <form action="#">
+				<div class="input-box">
+				  <input type="text" placeholder="Enter your name">
+				</div>
+				<div class="input-box">
+				  <input type="text" placeholder="Enter your email">
+				</div>
+				<div class="input-box message-box">
+					<textarea class=" " rows="3" placeholder="message"></textarea>
+				</div>
+				<div class="button button-primary">
+				  <input type="button" value="Send Now" >
+				  
+				</div>
+			  </form>
+			</div>
+			</div>
+		  </div>
+	</div>
+	
+	
+</div>
+
+
+	<div class="bg-white -mt-1">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#334155" fill-opacity="1"
+				  d="M0,96L40,112C80,128,160,160,240,170.7C320,181,400,171,480,149.3C560,128,640,96,720,90.7C800,85,880,107,960,122.7C1040,139,1120,149,1200,149.3C1280,149,1360,139,1400,133.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+		</svg>
+		
+	</div>
+
+	<div class="bg-white">
+	<div class="container max-w-screen-lg px-8 py-4">
+		<div class="text-center">
+			<div class="text-center">
+				<h3 class="text-4xl font-bold">No download or installation required.</h3>
+				<p class="text-xl">Instantly accessible from all your devices.</p>
+			</div>
+			<div class="flex flex-wrap justify-center pt-12 text-xl">
+									<a href="#learn" class="button-grey p-4 sm:px-8 mb-2 sm:mb-0 w-full sm:w-auto mx-4 sm:mx-0">
+						<div>
+							<div>Learn More</div>
+							<div class="text-xs block text-gray-500 pt-1">About watermarking</div>
+						</div>
+					</a>
+					{% if session.get('email') %}
+								<a href="water" class="button-primary py-6 px-4 sm:px-8 w-full sm:w-auto mx-4 sm:ml-2 sm:mr-0">
+					 Enter  <i class="fa-solid fa-long-arrow-right"></i>
+					 {% else %}
+					 <a href="{{ url_for('login') }}" class="button-primary py-6 px-4 sm:px-8 w-full sm:w-auto mx-4 sm:ml-2 sm:mr-0">
+						Get Started   <i class="fa-solid fa-long-arrow-right"></i>
+					</a>
+					{% endif %}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+
+			<div class="bg-gray-900 text-gray-500 pt-8 mt-8 sm:pt-16 sm:mt-16">
+				<div class="container max-w-screen-lg">
+					<div class="flex flex-wrap">
+						<div class="w-full md:w-1/3 px-12 pb-6 text-center">
+							<div class="font-bold uppercase tracking-widest text-sm py-2 text-white">Navigation</div>
+							<ul class="leading-tight">
+								<li class="py-2"><a href="#about" class="font-bold hover:text-gray-400">About</a></li>
+								<li class="py-2"><a href="login.html" class="font-bold hover:text-gray-400">Login</a></li>
+								<li class="py-2"><a href="login.html" class="font-bold hover:text-gray-400">Register</a></li>
+								
+							</ul>
+						</div>
+						<div class="w-full md:w-1/3 px-12 pb-6 text-center">
+							<div class="font-bold uppercase tracking-widest text-sm py-2 text-white">Features</div>
+							<ul class="leading-tight">
+								{% if session.get('email') %}
+								<li class="py-2">
+									<a href="water" class="font-bold hover:text-gray-400">Watermarking</a></li>
+					 			{% else %}
+								 <li class="py-2"><a href="login.html" class="font-bold hover:text-gray-400">Watermarking</a></li>
+								{% endif %}
+								
+								<li class="py-2"><a href="#learn" class="font-bold hover:text-gray-400">Key Features</a></li>
+								<li class="py-2"><a href="compatibility.html" class="font-bold hover:text-gray-400">Compatibility</a></li>
+
+							</ul>
+						</div>
+						<div class="w-full md:w-1/3 px-12 pb-6 text-center">
+							<div class="font-bold uppercase tracking-widest text-sm py-2 text-white">Company</div>
+							<ul class="leading-tight">
+								<li class="py-2"><a href="privacy.html" class="font-bold hover:text-gray-400">Privacy Policy</a></li>
+								<li class="py-2"><a href="terms.html" class="font-bold hover:text-gray-400">Terms of Service</a></li>
+								<li class="py-2"><a href="#contact" class="font-bold hover:text-gray-400">Contact Support</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center bg-gray-900 text-gray-700 py-6">
+				<p><b class="text-white">&copy;</b> <a href="/" class="text-primary-dark hover:text-primary font-bold ">Watermark</a><b class="text-white"> All rights reserved.</b></p>
+				<p><b class="text-white"> Designed & Developed by </b><a href="https://www.linkedin.com/in/bharathvaj-saravanan-ab21001b4/" class="text-primary-dark hover:text-primary font-bold">Bharathvaj S</a></p>
+
+				<p>
+					<img src="static\image\united-states-flag-icon.svg" alt="USA Flag" aria-hidden="true" focusable="true"  data-icon="flag-usa" class="inline-block h-4 svg-inline fa-flag-usa" >
+					<b class="text-white">Made in USA</b>
+					
+				</p>
+			</div>
+
+		</div><!-- End of Container -->
+
+			<div class="scroll-to-top"><a href="/"><i  class="fa-solid fa-angle-up "></i></a>
+				
+			</div>
+			
+		<!-- </footer> -->
+		
+		<script>
+	/*!
+* Lazy Load Images without jQuery
+* http://kaizau.github.io/Lazy-Load-Images-without-jQuery/
+*
+* Original by Mike Pulaski - http://www.mikepulaski.com
+* Modified by Kai Zau - http://kaizau.com
+*/
+	!function () {
+		function d(a)
+		{
+			var b = 0;
+			if (a.offsetParent) {
+				do b += a.offsetTop; while (a = a.offsetParent);
+				return b
+			}
+		}
+
+		var a = window.addEventListener || function (a, b) {
+			window.attachEvent("on" + a, b)
+		}, b = window.removeEventListener || function (a, b) {
+			window.detachEvent("on" + a, b)
+		}, c = {
+			cache: [], mobileScreenSize: 500, addObservers: function () {
+				a("scroll", c.throttledLoad), a("resize", c.throttledLoad)
+			}, removeObservers: function () {
+				b("scroll", c.throttledLoad, !1), b("resize", c.throttledLoad, !1)
+			}, throttleTimer: (new Date).getTime(), throttledLoad: function () {
+				var a = (new Date).getTime();
+				a - c.throttleTimer >= 200 && (c.throttleTimer = a, c.loadVisibleImages())
+			}, loadVisibleImages: function () {
+				for (var a = window.pageYOffset || document.documentElement.scrollTop, b = window.innerHeight || document.documentElement.clientHeight, e = {
+					min: a - 200,
+					max: a + b + 200
+				}, f = 0; f < c.cache.length;) {
+					var g = c.cache[f], h = d(g), i = g.height || 0;
+					if (h >= e.min - i && h <= e.max) {
+						var j = g.getAttribute("data-src-mobile");
+						g.onload = function () {
+							this.className = this.className.replace(/(^|\s+)lazy-load(\s+|$)/, "$1lazy-loaded$2")
+						}, g.src = j && screen.width <= c.mobileScreenSize ? j : g.getAttribute("data-src"), g.removeAttribute("data-src"), g.removeAttribute("data-src-mobile"), c.cache.splice(f, 1)
+					} else f ++
+				}
+				0 === c.cache.length && c.removeObservers()
+			}, init: function () {
+				document.querySelectorAll || (document.querySelectorAll = function (a) {
+					var b = document, c = b.documentElement.firstChild, d = b.createElement("STYLE");
+					return c.appendChild(d), b.__qsaels = [], d.styleSheet.cssText = a + "{x:expression(document.__qsaels.push(this))}", window.scrollBy(0, 0), b.__qsaels
+				}), a("load", function d() {
+					for (var a = document.querySelectorAll("img[data-src]"), e = 0; e < a.length; e ++) {
+						var f = a[e];
+						c.cache.push(f)
+					}
+					c.addObservers(), c.loadVisibleImages(), b("load", d, !1)
+				})
+			}
+		};
+		c.init()
+	}();
+</script>		<script>
+
+    function toggleVisible(element, inline)
+    {
+        let collection = document.getElementsByClassName(element);
+
+        for (const item of collection) {
+            if (item.style.display === "block" || item.style.display === "inline") {
+                item.style.display = "none";
+            } else {
+                item.style.display = inline ? "inline" : "block";
+            }
+        }
+    }
+
+    function toggleFontWeight(element)
+    {
+        let collection = document.getElementsByClassName(element);
+
+        for (const item of collection) {
+            if (item.style.fontWeight === "bold") {
+                item.style.fontWeight = "normal";
+            } else {
+                item.style.fontWeight = "bold";
+            }
+        }
+    }
+
+</script>		<script>
+
+	// On document ready without jQuery
+	document.addEventListener("DOMContentLoaded", function (event) {
+
+		if( document.getElementById("cover") ) {
+			showBubble(1);
+		}
+
+	});
+
+	// Cover bubbles animation
+	function showBubble(i)
+	{
+
+		let j = i < 3 ? i + 1 : 1;
+		let bubble_last = document.getElementById("bubble_" + i);
+		let bubble_next = document.getElementById("bubble_" + j);
+		bubble_last.style.display = 'none';
+		bubble_next.style.display = 'block';
+		bubble_last.classList.remove("animate-bubble");
+		bubble_next.classList.add("animate-bubble");
+
+		setTimeout(() => {
+			showBubble(j);
+		}, "5000");
+
+	}
+
+</script>
+		
+	</body>
+
+</html>
